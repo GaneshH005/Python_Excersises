@@ -1,15 +1,11 @@
-Name of student = input("enter the student name")
-eng = 90
-sci = 98
-math = 88
-total = ((eng+sci+math)/3)
+lucky = 9
+guess = 20
 
-if total > 90:
-    print("Grade A")
-elif total > 80 and total < 90:
-    print("Grade B")
-elif total < 35:
-    print("fail")
-else:
-    print("Avrage grade")
-    
+if guess < lucky - 2 :
+    print("Too low")
+elif guess > lucky + 2 :
+    print("Too high")
+elif guess == lucky :
+    print("correct")
+elif (guess >= lucky - 2) and (guess <= lucky + 2):
+    print ("you are Almost There")
