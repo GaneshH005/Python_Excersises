@@ -13,7 +13,7 @@ print("milage of the vehicle", milage,
 
 dist_to_travel = 560
 tank_capacity = int(input("enter the fuel tank capacity: "))
-stops_for_refil = dist_to_travel // milage
+stops_for_refil = dist_to_travel // (milage * tank_capacity)
 
 print("number of approximate stops to required to refil the fuel ", 
         stops_for_refil, ", to cover distance ", dist_to_travel, "kms")
